@@ -35,7 +35,15 @@
 
 
 <style>
-html,body,h2,h3,h4 {font-family: Helvetica, sans-serif}
+	body {
+		background-color: #222; /* Cambia este valor al color oscuro deseado */
+		color: #db1313; /* Cambia el color del texto para que sea legible en el fondo oscuro */
+	}
+
+	.w3-content.card {
+		background-color: #333; /* Puedes cambiar el color de fondo de elementos específicos como este contenedor */
+		color: #fc0909; /* Cambia el color del texto para que sea legible en el fondo oscuro */
+	}
 </style>
 
 
@@ -80,25 +88,26 @@ html,body,h2,h3,h4 {font-family: Helvetica, sans-serif}
 
 <!-- w3-content define un contenedor para contenido centrado de tamaño fijo,
 y se envuelve alrededor de todo el contenido de la página. -->
-<div class="w3-content card" style="max-width:960px">
-
+<div class="w3-content card" style="max-width:960px; background-color: rgb(71, 88, 71); color: #000000;">
+    
 
 
 <!-- 1. HOME PAGE TAB -->
-<div class="tabbed w3-animate-opacity w3-white" id="home">
+<div class="tabbed w3-animate-opacity w3-white" id="home" style="max-width:960px; background-color: rgb(71, 88, 71); color: #f80a0a;">
 
 
 
 <!-- Header -->
 
 <div class="w3-center title adjust-fontcolor logo">
-	<div class="w3-center">
+	<div class="w3-center" style="background-color: rgb(71, 88, 71); color: #f80a0a;">
+ 
 	<img class="w3-round adjust-image" src="assets/logoinub.jpg" width="150" alt=""> 
 </div> 
 	
-  <h1 class="space-letters w3-text-green"><b>Analizador de lesiones en la piel</b></h1>
+  <h1 class="space-letters w3-text-green" style="max-width:960px;background-color: #232; color: #f80a0a;"> Analizador de lesiones en la piel</h1>
   
-  <h3 class="space-letters w3-text-green"><b>Analizador de imágenes en línea de los tres diagnósticos más probables para una lesión en la piel</b></h3>
+  <h3 class="space-letters w3-text-green" style="background-color: #232; color: #f80a0a;"><b>Analizador de imágenes en línea de los tres diagnósticos más probables para una lesión en la piel</b></h3>
   
 </div>
 
@@ -115,11 +124,11 @@ y se envuelve alrededor de todo el contenido de la página. -->
 
 
 <div class="w3-center">
-	<div class="progress-bar">Modelo con Inteligencia Artificial cargando...</div>
+	<div class="progress-bar" style="max-width:960px;background-color: #232; color: #f80a0a;">Modelo con Inteligencia Artificial cargando... </div>
 </div>
 
 
-<div class="w3-center add-padding w3-border add-margin side-margin w3-round w3-pale-blue">
+<div class="w3-center add-padding w3-border add-margin side-margin w3-round w3-pale-blue" style="max-width:960px;background-color: #232; color: #f80a0a;">
 		
 	<h5 class='new-font'>Resultados</h5>
 	<ol class='w3-left-align' id='prediction-list'></ol>
@@ -140,11 +149,11 @@ apertura de camara o realice un llamado al método simulateClick()-->
 </div><!--Final del Home Page, documente los resultados obtenidos del modelo, a saber, Exactitud, Presición y Sencibilidad, dando créditos a la base de datos trabajada-->
 
 <div class='w3-padding'>
-	<h5 class="space-letters tag-font w3-text-green"><b>Caracteristicas técnicas del Modelo:</b></h5>
-	<h5 class="space-letters tag-font w3-text-green"><b>- Exactitud: 0.90 </b></h5>
-	<h5 class="space-letters tag-font w3-text-green"><b>- Presición: 0.91 </b></h5>
-	<h5 class="space-letters tag-font w3-text-green"><b>- Sencibilidad: 0.90 </b></h5>
-	<h6 class="space-letters tag-font w3-text-green"><b>El entrenamiento del modelo está basado en el conjunto de 10015 imágenes dermatoscópicas de Harvard, entrenado con Tensorflow</b></h6>
+    <h5 class="space-letters tag-font" style="color: black;"><b>Caracteristicas técnicas del Modelo:</b></h5>
+    <h5 class="space-letters tag-font" style="color: black;"><b>- Exactitud: 0.90 </b></h5>
+    <h5 class="space-letters tag-font" style="color: black;"><b>- Precisión: 0.91 </b></h5>
+    <h5 class="space-letters tag-font" style="color: black;"><b>- Sensibilidad: 0.90 </b></h5>
+    <h6 class="space-letters tag-font" style="color: black;"><b>El entrenamiento del modelo está basado en el conjunto de 10015 imágenes dermatoscópicas de Harvard, entrenado con Tensorflow</b></h6>
 </div>
 
 <!-- Simulamos clics en estos dos botones de carga inicial. -->

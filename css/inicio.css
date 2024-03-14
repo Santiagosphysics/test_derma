@@ -13,14 +13,14 @@ and open the template in the editor.
 .front #grueso .block {margin-bottom:10px;}
 .front #grueso .block-block {
 	border-bottom:1px solid #dae0b8;
-	background-color:#fff;
+	background-color:#4607f1;
 	-moz-box-shadow: 0 5px 10px -5px #dae0b8; /* firefox */
 	-webkit-box-shadow: 0 5px 10px -5px #dae0b8;
 	box-shadow: 0 5px 10px -5px #dae0b8; /* chrome */
 }
 .front .grueso .block-views .view-content {
 	border-bottom:1px solid #dae0b8;
-	background-color:#fff;
+	background-color:#4607f1;
 	-moz-box-shadow: 0 5px 10px -5px #dae0b8; /* firefox */
 	-webkit-box-shadow: 0 5px 10px -5px #dae0b8;
 	box-shadow: 0 5px 10px -5px #dae0b8; /* chrome */
@@ -41,7 +41,7 @@ and open the template in the editor.
 }
 .front .views-view-grid td, .page-ri .views-view-grid td {
 	vertical-align:top;
-	border-bottom:1px solid #EFF2DC;
+	border-bottom:1px solid #4607f1;
 	padding:0;
 }
 body.page-educacion-continuada .views-view-grid {font-size:0.9em;}
